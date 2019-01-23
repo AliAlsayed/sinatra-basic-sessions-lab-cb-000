@@ -4,4 +4,7 @@ configure do
   set :session_secret, 'secret'
 end
 class App < Sinatra::Base
+  get '/' do 
+    erb :index
+  end
 end
